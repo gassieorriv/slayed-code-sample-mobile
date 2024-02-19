@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/search"
+        android:icon="@drawable/com_facebook_profile_picture_blank_square"
+        android:title="@string/profile_picture"
+        android:contentDescription="@string/profile_picture"
+        app:showAsAction="ifRoom" />
+<group>
+    <item
+        android:id="@+id/more"
+        android:title="@string/personal_information"
+        android:contentDescription="@string/personal_information"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/social"
+        android:title="@string/connected_accounts"
+        android:contentDescription="@string/connected_accounts"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/preferences"
+        android:title="@string/preferences"
+        android:contentDescription="@string/preferences"
+        app:showAsAction="never" />
+</group>
+<group>
+    <item
+        android:id="@+id/contact"
+        android:title="@string/contact_us"
+        android:contentDescription="@string/contact_us"
+        app:showAsAction="never" />
+</group>
+    <item
+        android:id="@+id/logout"
+        android:title="@string/sign_out"
+        android:contentDescription="@string/sign_out"
+        app:showAsAction="never" />
+</menu>

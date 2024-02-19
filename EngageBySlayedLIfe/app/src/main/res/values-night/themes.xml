@@ -1,0 +1,124 @@
+<resources
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base.Base application theme. -->
+    <style name="Theme.MaterialComponents" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/blue_100</item>
+        <item name="colorPrimaryVariant">@color/dark_blue_100</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/pink_100</item>
+        <item name="colorSecondaryVariant">@color/orange_100</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+
+
+        <!-- New MaterialComponents attributes. -->
+        <item name="colorSurface">@color/blue_100</item>
+        <item name="colorOnBackground">@color/white</item>
+        <item name="colorOnError">@color/pink_100</item>
+        <item name="colorOnSurface">@color/orange_100</item>
+        <item name="scrimBackground">@color/mtrl_scrim_color</item>
+        <item name="textAppearanceHeadline1">@style/TextAppearance.MaterialComponents.Headline1</item>
+        <item name="textAppearanceHeadline2">@style/TextAppearance.MaterialComponents.Headline2</item>
+        <item name="textAppearanceHeadline3">@style/TextAppearance.MaterialComponents.Headline3</item>
+        <item name="textAppearanceHeadline4">@style/TextAppearance.MaterialComponents.Headline4</item>
+        <item name="textAppearanceHeadline5">@style/TextAppearance.MaterialComponents.Headline5</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.MaterialComponents.Headline6</item>
+        <item name="textAppearanceSubtitle1">@style/TextAppearance.MaterialComponents.Subtitle1</item>
+        <item name="textAppearanceSubtitle2">@style/TextAppearance.MaterialComponents.Subtitle2</item>
+        <item name="textAppearanceBody1">@style/TextAppearance.MaterialComponents.Body1</item>
+        <item name="textAppearanceBody2">@style/TextAppearance.MaterialComponents.Body2</item>
+        <item name="textAppearanceCaption">@style/TextAppearance.MaterialComponents.Caption</item>
+        <item name="textAppearanceButton">@style/TextAppearance.MaterialComponents.Button</item>
+        <item name="textAppearanceOverline">@style/TextAppearance.MaterialComponents.Overline</item>
+    </style>
+    <style name="joinFacebookButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="background">@drawable/gradient_facebook_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/gradient_facebook_button</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="elevation">10dp</item>
+        <item name="android:text">@string/join_with_facebook</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="icon">@drawable/facebook</item>
+        <item name="android:icon">@drawable/facebook</item>
+    </style>
+    <style name="joinGoogleButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_100</item>
+        <item name="colorOnPrimary">@color/google_red_200</item>
+        <item name="background">@drawable/gradient_google_button</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/gradient_google_button</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="elevation">10dp</item>
+        <item name="android:text">@string/join_with_google</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="icon">@drawable/google</item>
+        <item name="android:icon">@drawable/google</item>
+    </style>
+    <style name="joinTwitterButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_100</item>
+        <item name="colorOnPrimary">@color/twitter_100</item>
+        <item name="background">@color/twitter_100</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/twitter_100</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="elevation">10dp</item>
+        <item name="android:text">Connect Twitter Account</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="icon">@drawable/twitter</item>
+        <item name="android:icon">@drawable/twitter</item>
+    </style>
+    <style name="joinInstagramButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_100</item>
+        <item name="colorOnPrimary">@color/instagram_100</item>
+        <item name="background">@color/instagram_100</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/instagram_100</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="elevation">10dp</item>
+        <item name="android:text">Connect Instagram Account</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+    <style name="joinYoutubeButton" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="colorPrimary">@color/red_100</item>
+        <item name="colorOnPrimary">@color/google_red_100</item>
+        <item name="background">@color/google_red_100</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@color/google_red_100</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+        <item name="elevation">10dp</item>
+        <item name="android:text">Connect Youtube Channel</item>
+        <item name="cornerRadius">30dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:layout_marginRight">16dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="android:layout_marginTop">16dp</item>
+    </style>
+
+</resources>

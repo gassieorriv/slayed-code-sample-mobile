@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="time_array">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>45 minutes</item>
+        <item>1 hour</item>
+        <item>1–1/2 hour</item>
+        <item>2 hours</item>
+        <item>2-1/2 hours</item>
+        <item>3 hours</item>
+        <item>Half Day</item>
+        <item>All Day</item>
+    </string-array>
+</resources>

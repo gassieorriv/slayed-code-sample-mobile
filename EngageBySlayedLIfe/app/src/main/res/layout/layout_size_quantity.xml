@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp">
+    <ImageView
+        android:layout_width="16dp"
+        android:src="@drawable/tw__composer_close"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16sp"
+        android:id="@+id/product_size_close"
+        android:layout_height="16dp"/>
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:id="@+id/product_size"
+        android:layout_toEndOf="@+id/product_size_close"
+        android:fontFamily="@font/montserrat"
+        android:layout_marginStart="10dp"
+        android:textSize="16sp"
+        android:layout_centerVertical="true"
+        style="@style/Widget.MaterialComponents.TextView"
+        android:layout_height="wrap_content"/>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/product_quantity"
+        android:minWidth="100dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="@color/tw__composer_deep_gray"
+        android:textColorHint="@color/tw__composer_deep_gray"
+        android:layout_height="wrap_content"
+        tools:ignore="RelativeOverlap">
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="100dp"
+            android:singleLine="true"
+            android:textSize="14sp"
+            android:inputType="number"
+            android:textColor="@color/blue_100"
+            android:fontFamily="@font/montserrat"
+            android:layout_marginEnd="10dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activities.PreferencesActivity">
+    <include layout="@layout/navigation_dead_end"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/top_navigation"/>
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:visibility="invisible"
+        style="@style/Widget.MaterialComponents.LinearProgressIndicator"
+        android:id="@+id/progress_bar"
+        app:trackColor="@color/pink_100"
+        app:indicatorColor="@color/blue_100"
+        android:indeterminate="true" />
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="5dp"
+        android:id="@+id/preferencesTableLayout"
+        android:layout_height="wrap_content">
+
+    </TableLayout>
+</LinearLayout>

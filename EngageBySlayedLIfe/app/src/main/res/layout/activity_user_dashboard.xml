@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="activities.UserDashboardActivity">
+
+    <include layout="@layout/navigation_side_main"
+        android:id="@+id/side_navigation"/>
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_above="@+id/bottom_user_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <include layout="@layout/navigation_bottom_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_user_navigation"/>
+</RelativeLayout>

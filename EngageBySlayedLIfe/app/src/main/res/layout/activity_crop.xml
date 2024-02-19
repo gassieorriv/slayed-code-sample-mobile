@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="activities.CropActivity">
+
+    <com.theartofdev.edmodo.cropper.CropImageView
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.theartofdev.edmodo.cropper.CropImageView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_rotateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/upload_cropImage"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="16dp"
+        android:clickable="true"
+        android:onClick="RotateImage"
+        android:tint="@color/white"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        android:contentDescription="@string/rotate"
+        android:focusable="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/upload_cropImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="16dp"
+        android:onClick="CropImage"
+        android:layout_marginBottom="16dp"
+        android:background="@color/blue_100"
+        android:backgroundTint="@color/blue_100"
+        android:foregroundTint="@color/white"
+        android:tint="@color/white"
+        android:clickable="true"
+        app:srcCompat="@android:drawable/ic_menu_crop"
+        android:contentDescription="@string/crop"
+        android:focusable="true" />
+</RelativeLayout>

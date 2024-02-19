@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        app:strokeColor="@color/basegray"
+        android:id="@+id/product_card"
+        app:cardElevation="4dp"
+        app:cardCornerRadius="10dp"
+        style="@style/Widget.MaterialComponents.CardView"
+        android:layout_margin="10dp"
+        android:paddingBottom="5dp"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/product_image"
+                android:scaleType="centerInside"
+                android:adjustViewBounds="true"
+                android:src="@drawable/login_background300"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/product_or_service" />
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Subtitle1"
+                android:id="@+id/product_name"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/product_image"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:id="@+id/product_description"
+                android:maxLength="80"
+                android:layout_below="@+id/product_name"
+                android:layout_marginTop="0dp"
+                android:layout_toEndOf="@+id/product_image"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"/>
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/size_group"
+                android:layout_width="wrap_content"
+                android:layout_below="@+id/product_description"
+                android:layout_toEndOf="@+id/product_image"
+                android:layout_marginStart="10dp"
+                android:layout_height="wrap_content"/>
+        </RelativeLayout>
+    </com.google.android.material.card.MaterialCardView>
+</RelativeLayout>
